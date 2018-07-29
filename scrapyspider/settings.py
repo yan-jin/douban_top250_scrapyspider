@@ -57,8 +57,8 @@ DOWNLOADER_MIDDLEWARES = {
 
 # Enable or disable extensions
 # See http://scrapy.readthedocs.org/en/latest/topics/extensions.html
-MYEXT_ENABLED=True
-IDLE_NUMBER=360
+MYEXT_ENABLED = True
+IDLE_NUMBER = 360
 EXTENSIONS = {
     'scrapyspider.extensions.RedisSpiderSmartIdleClosedExtensions': 500,
 }
@@ -115,7 +115,7 @@ REDIS_HOST = '127.0.0.1'
 REDIS_PORT = 6379
 # Custom redis client parameters (i.e.: socket timeout, etc.)
 REDIS_PARAMS = {}
-# REDIS_URL = 'redis://user:pass@hostname:9001'
+REDIS_URL = 'redis://@58.87.111.39:6379'
 # REDIS_PARAMS['password'] = 'itcast.cn'
 LOG_LEVEL = 'DEBUG'
 # Ensure all spiders share same duplicates filter through redis.
